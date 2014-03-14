@@ -10,11 +10,13 @@ Utility = function (me) {
     };
 
     this.shortHand = "Utility";
-	
+
 	/**
 	 * get integer value
 	 * @param {String} a
-	 * @example [0] 0 "Expected result"
+	 * @example ["0"] 0 "Expected result"
+     * @test {"args":["0"],"expected": 0}
+     * @return {Integer}
 	 */
     Static.getInt = function (a) {
         if (a) {
@@ -22,23 +24,23 @@ Utility = function (me) {
         }
         return 0;
     };
-	
+
 	/**
 	* erwrrt ertttrtye
 	*@param {String} a
 	*@param {String} b
 	*/
 	this.getABCD = function(a,b){
-	
+
 	}
 
     /**
      * convert byte to ize
-     * @param  {Long} bytes 
+     * @param  {Long} bytes
      * @example
      * 12 34 "343 3434"
      * @test 34 43 34 3434
-     * @return {String}       
+     * @return {String}
      */
     Static.bytesToSize = function (bytes) {
         var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
