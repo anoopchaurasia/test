@@ -2,17 +2,21 @@
  "use strict"
  var jsdoc = require("jsdoc");
  require("jsfm");
- fm.basedir = "F:/practo/Public_html/js/ceb/classes";
+
+fm.sourceDirs.records = "F:/practo/Public_html/js/ceb/classes";
+fm.sourceDirs.calendar = "F:/practo/Public_html/js/calendar/src"
 
  var
 log = function() {};
- var k = jsdoc.run(fm.basedir + "/records/Utility.js");
+
  var extractedData = {
      methods: []
  };
 
  fm.Include('records.Utility', function() {
-     for (var i in k) {
+
+    var k = jsdoc.run(fm.getPath("records.Utility"));
+    for (var i in k) {
          handle(k[i]);
      }
      extractedData.class = fm.stringToObject(k[0].longname).toString();
@@ -39,6 +43,10 @@ log = function() {};
      }
      extractedData.methods.push(methodTests);
  }
+setTimeout(function(){
+
+ console.log(fm.getMissingClass());
+}, 1000);
 
  function test(cases) {
     var fn;

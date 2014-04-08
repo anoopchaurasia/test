@@ -1,4 +1,8 @@
 {
+	"class":"records.Utility",
+	"sourceDirs":{
+		"records": "F:/practo/Public_html/js/ceb/classes"
+	},
    "methods":[
       {
          "tests":[
@@ -273,6 +277,5 @@
          "method":"bytesToSize",
          "methodType":"static"
       }
-   ],
-   "class":"records.Utility"
+   ]
 }
