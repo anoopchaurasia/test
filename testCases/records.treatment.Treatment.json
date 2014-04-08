@@ -1,0 +1,38 @@
+{
+	"class":"records.treatment.Treatment",
+	"sourceDirs":{
+		"records": "F:/practo/Public_html/js/ceb/classes",
+		"calendar": "F:/practo/Public_html/js/calendar/src"
+	},
+	"args":[
+		{
+			"unit_cost": 100
+		}
+	],
+	"instance": {
+		"unit_cost": 100,
+		"discount": 0,
+		"discount_type": "PERCENT",
+		"quantity": 1
+	},
+   "methods": [
+		{
+			"tests":[
+				{
+				   "args":[],
+				   "expected": 100
+				}
+			],
+			"method":"getTotal"
+		},
+		{
+			"tests":[
+				{
+					"args":[],
+					"expected": 0
+				}
+			],
+			"method": "getDiscount" 
+		}
+	]
+}

@@ -4,6 +4,11 @@
 		"records": "F:/practo/Public_html/js/ceb/classes",
 		"calendar": "F:/practo/Public_html/js/calendar/src"
 	},
+	args:[
+		{
+			
+		}
+	],
    "methods": [
 		{
 			"tests":[
