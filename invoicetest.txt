@@ -4,6 +4,15 @@
 		"records": "F:/practo/Public_html/js/ceb/classes",
 		"calendar": "F:/practo/Public_html/js/calendar/src"
 	},
-   "methods":[
-   ]
+   "methods": [
+		{
+			"tests":[
+				{
+				   "args":[],
+				   "expected": 0
+				}
+			],
+			"method":"getRemaining"
+		}
+	]
 }
